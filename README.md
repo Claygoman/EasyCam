@@ -7,7 +7,7 @@
 2. Efficient H.264 encoding using hardware-accelerated codecs
 3. Optimized for energy efficiency, maintaining battery life during streaming
 
-![Рисунок1](https://github.com/user-attachments/assets/c52754e9-377b-435c-a1e7-5e36d94d6706)
+
 
 ---
 
@@ -20,4 +20,4 @@
 2. Эффективное кодирование в формате H.264 с использованием аппаратных кодеков
 3. Оптимизация энергоэффективности для увеличения времени работы аккумулятора
 
-![Рисунок1](https://github.com/user-attachments/assets/bbc150b7-edf5-4a78-a131-ddc6bb21cc07)
+
