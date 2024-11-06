@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CameraAppHabr" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/p_80</item>
+        <item name="colorPrimaryVariant">@color/p_30</item>
+        <item name="colorOnPrimary">@color/p_20</item>
+
+        <item name="colorSecondary">@color/s_80</item>
+        <item name="colorSecondaryVariant">@color/n_6</item>
+        <item name="colorOnSecondary">@color/s_20</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+</resources>

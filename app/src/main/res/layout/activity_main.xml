@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.home.MainActivity">
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="344dp"
+        android:layout_height="431dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/dpmResourses"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:dropDownSelector="?android:attr/homeAsUpIndicator"
+        android:focusable="auto"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textureView" />
+
+    <Spinner
+        android:id="@+id/dpmFps"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textureView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-9dp" />
+
+    <Button
+        android:id="@+id/btStartStream"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Начать стрим"
+        app:layout_constraintEnd_toEndOf="@+id/textureView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textureView"
+        app:layout_constraintTop_toBottomOf="@+id/dpmResourses" />
+
+    <Button
+        android:id="@+id/btStopStream"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Закончить стрим"
+        app:layout_constraintEnd_toEndOf="@+id/textureView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textureView"
+        app:layout_constraintTop_toBottomOf="@+id/btStartStream" />
+
+    <Button
+        android:id="@+id/btSettings"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Настройки"
+        app:layout_constraintEnd_toEndOf="@+id/textureView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textureView"
+        app:layout_constraintTop_toTopOf="@+id/btStopStream" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Разрешение"
+        app:layout_constraintBottom_toTopOf="@+id/dpmResourses"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Кол-во fps"
+        app:layout_constraintBottom_toTopOf="@+id/dpmFps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
